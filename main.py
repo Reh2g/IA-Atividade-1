@@ -6,19 +6,17 @@ myChatBot = ChatBot()
 #criar o modelo
 myChatBot.createModel()
 
-
-
-
 print("Bem vindo ao Chatbot")
 
-
-pergunta = input("como posso te ajudar?\n")
+pergunta = input("Como posso te ajudar?\n")
 resposta, intencao = myChatBot.chatbot_response(pergunta)
-print(resposta + "   ["+intencao[0]['intent']+"]")
+print(resposta + "   [" + intencao[0]['intent'] + "]")
 
-
-while (intencao[0]['intent']!="despedida"):
-    pergunta = input("posso lhe ajudar com algo a mais?\n")
+while (intencao[0]['intent'] != "despedida"):
+    if (intencao[0]['intent'] != "saudacao"):
+        pergunta = input("Posso lhe ajudar com algo a mais?\n")
+    else:
+        pergunta = input("Como posso te ajudar?\n")
     resposta, intencao = myChatBot.chatbot_response(pergunta)
     print(resposta + "   [" + intencao[0]['intent'] + "]")
 

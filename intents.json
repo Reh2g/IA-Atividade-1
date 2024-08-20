@@ -1,32 +1,57 @@
-{"intents":[
-  { "tag": "saudacao",
-    "patterns":["Ola","Opa","Oi", "tudo bem"],
-    "responses": ["Oi","Olá"]
-  },
-  
-  { "tag": "despedida",
-    "patterns":["valeu","tchau","Obrigado","tks"],
-    "responses": ["Até breve","Falou"]
-  },
-  
-  { "tag": "data_prova",
-    "patterns":["Quando sera a prova?","A prova será em que dia?"],
-    "responses": ["no dia 26"]
-  },
-  
-  {"tag": "o_que_e",
-    "patterns":["O que é o programa PIPE?","O que é o PIPE?"],
-    "responses": ["O Programa Pesquisa Inovativa em Pequenas Empresas da FAPESP destina-se a apoiar a execução de pesquisa científica e tecnológica em pequenas empresas no Estado de São Paulo. Seus objetivos são apoiar a pesquisa em ciência e tecnologia como instrumento para promover a inovação tecnológica e o desenvolvimento empresarial, aumentar a competitividade das pequenas empresas, possibilitar que as empresas se associem a pesquisadores do ambiente acadêmico em projetos de pesquisa visando à inovação tecnológica e contribuir para a formação e o desenvolvimento de núcleos de desenvolvimento tecnológico nas empresas e para o emprego de pesquisadores no mercado de trabalho empresarial criando uma cultura permanente de inovação."]
-  },
+{
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": [ "Olá", "Ola", "Oi", "Eai", "Salve" ],
+      "responses": [ "Olá!", "Oi!", "Opa!" ]
+    },
 
-  { "tag": "etapas",
-    "patterns":["Quais são as etapas?","Existem etapas no programa?","Quantas etapas tem o programa?"],
-    "responses": ["Fase 1: é destinada à verificação da viabilidade técnico-científica da proposta, (duração de até 9 meses e orçamento de até R$ 300.000, mais Reserva Técnica e Benefícios Complementares)\nFase 2: destina-se à execução da pesquisa propriamente dita (duração de até 24 meses e orçamento de até R$ 1.500.000, mais Reserva Técnica e Benefícios Complementares)\nPIPE Invest: Aceleração da chegada ao mercado de Projetos da Fase 2, quando houver terceira parte interessada (duração de até 24 meses e orçamento de até R$ 1.500.000)\nFase 3: desenvolvimento comercial e industrial dos produtos, processos, sistemas e/ou serviços inovadores obtidos a partir de pesquisas anteriores realizadas pela pequena empresa sem o apoio da FAPESP ou a partir de pesquisa apoiada no âmbito do PIPE."]
-  },
+    {
+      "tag": "despedida",
+      "patterns": [ "Valeu", "Tchau", "Obrigado", "Tks", "Vlw" ],
+      "responses": [ "Até breve!", "Falou!", "Disponha!" ]
+    },
 
-  { "tag": "fase",
-    "patterns":["A Fase 1 é obrigatória?","Posso ir direto para a Fase 2?","É possível pular a primeira fase?"],
-    "responses": ["A empresa pode submeter uma proposta à Fase 2 Direta. Nesse caso é fundamental demonstrar que a viabilidade técnica da pesquisa já foi demonstrada; para tanto é fundamental apresentar um ótimo documento de “Justificativa para a Fase 2 Direta”".]
-  }
-]
+    {
+      "tag": "o_que_e",
+      "patterns": [ "O que é o programa PIPE?", "O que é o PIPE?" ],
+      "responses": [ "O Programa Pesquisa Inovativa em Pequenas Empresas da FAPESP destina-se a apoiar a execução de pesquisa científica e tecnológica em pequenas empresas no Estado de São Paulo. Seus objetivos são apoiar a pesquisa em ciência e tecnologia como instrumento para promover a inovação tecnológica e o desenvolvimento empresarial, aumentar a competitividade das pequenas empresas, possibilitar que as empresas se associem a pesquisadores do ambiente acadêmico em projetos de pesquisa visando à inovação tecnológica e contribuir para a formação e o desenvolvimento de núcleos de desenvolvimento tecnológico nas empresas e para o emprego de pesquisadores no mercado de trabalho empresarial criando uma cultura permanente de inovação." ]
+    },
+
+    {
+      "tag": "etapas",
+      "patterns": [ "Quais são as etapas?", "Existem etapas no programa?", "Quantas etapas tem o programa?" ],
+      "responses": [ "Fase 1: é destinada à verificação da viabilidade técnico-científica da proposta, (duração de até 9 meses e orçamento de até R$ 300.000, mais Reserva Técnica e Benefícios Complementares)\nFase 2: destina-se à execução da pesquisa propriamente dita (duração de até 24 meses e orçamento de até R$ 1.500.000, mais Reserva Técnica e Benefícios Complementares)\nPIPE Invest: Aceleração da chegada ao mercado de Projetos da Fase 2, quando houver terceira parte interessada (duração de até 24 meses e orçamento de até R$ 1.500.000)\nFase 3: desenvolvimento comercial e industrial dos produtos, processos, sistemas e/ou serviços inovadores obtidos a partir de pesquisas anteriores realizadas pela pequena empresa sem o apoio da FAPESP ou a partir de pesquisa apoiada no âmbito do PIPE." ]
+    },
+
+    {
+      "tag": "fase",
+      "patterns": [ "A Fase 1 é obrigatória?", "Posso ir direto para a Fase 2?", "É possível pular a primeira fase?" ],
+      "responses": [ "A empresa pode submeter uma proposta à Fase 2 Direta. Nesse caso é fundamental demonstrar que a viabilidade técnica da pesquisa já foi demonstrada; para tanto é fundamental apresentar um ótimo documento de “Justificativa para a Fase 2 Direta”." ]
+    },
+
+    {
+      "tag": "empresa_pipe",
+      "patterns": [ "Precisa ter uma empresa para realizar a solicitação do PIPE?", "Serei desclassíficado do PIPE caso não tenha uma empresa?" ],
+      "responses": [ "Não. A FAPESP analisa propostas de empresas ainda não constituídas. Empresas startup ainda não constituídas legalmente são incentivadas a submeter. Nos casos em que a proposta for recomendada, o proponente deverá então abrir formalmente a empresa antes da concessão da proposta." ]
+    },
+
+    {
+      "tag": "quando_solicitar",
+      "patterns": [ "Até quando podem ser solicitadas uma proposta ao PIPE?", "Quando podem ser solicitadas propostas ao PIPE?", "Quando posso submeter uma proposta ao PIPE?" ],
+      "responses": [ "As propostas para o PIPE Fase 1, Fase 2 e PIPE Invest são recebidas em fluxo contínuo durante todo o ano." ]
+    },
+
+    {
+      "tag": "horas_semanais",
+      "patterns": [ "Quantas horas semanais devo dedicar ao PIPE?", "Quantas horas semanais devo dedicar ao PIPE Invest?", "Preciso ter dedicação exclusiva ao projeto?" ],
+      "responses": [ "Caso o pesquisador principal seja pago pela empresa e não receba bolsa da FAPESP, é exigida a dedicação mínima de 24 horas semanais ao projeto na empresa. Em casos excepcionais, em que a empresa demonstra não poder arcar com o salário do Pesquisador Responsável, a FAPESP pode analisar solicitação de Bolsa de Pesquisa em Pequena Empresa (Bolsa PE FAPESP). Se o pesquisador principal solicitar Bolsa PE, é necessária a dedicação mínima de 40 horas semanais ao projeto." ]
+    },
+
+    {
+      "tag": "mais_info",
+      "patterns": [ "Como posso obter mais informações sobre o PIPE?", "Onde posso obter mais informações sobre o PIPE?", "Como posso obter mais informações sobre o PIPE Investe?" ],
+      "responses": [ "O site fapesp.br/pipe apresenta em detalhes o programa, incluindo o texto completo das normas e as chamadas vigentes. Adicionalmente, de forma periódica, acontece o evento “Diálogo sobre Apoio à Pesquisa para Inovação na Pequena Empresa” no qual o programa PIPE é apresentado e os membros da coordenação tiram dúvidas dos participantes (veja as próximas datas no site do PIPE)." ]
+    }
+ ]
 }
