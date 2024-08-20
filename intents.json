@@ -32,7 +32,7 @@
 
     {
       "tag": "empresa_pipe",
-      "patterns": [ "Precisa ter uma empresa para realizar a solicitação do PIPE?", "Serei desclassíficado do PIPE caso não tenha uma empresa?" ],
+      "patterns": [ "Precisa ter uma empresa para realizar a solicitação do PIPE?", "Serei desclassificado do PIPE caso não tenha uma empresa?" ],
       "responses": [ "Não. A FAPESP analisa propostas de empresas ainda não constituídas. Empresas startup ainda não constituídas legalmente são incentivadas a submeter. Nos casos em que a proposta for recomendada, o proponente deverá então abrir formalmente a empresa antes da concessão da proposta." ]
     },
 
