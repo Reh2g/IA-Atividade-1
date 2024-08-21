@@ -11,4 +11,4 @@ Alunos:
 ### Desenvolver um Chatbot que ajuda uma empresa e/ou um pesquisador a submeter um projeto PIPE (https://fapesp.br/pipe/).
 
 ## Metodologia:
-### O Chatbot baseia-se em uma rede neural que é treinada com certas perguntas e suas respectivas respostas. Ele analisa a pergunta feita pelo pesquisador e responde com base nas respostas pré-progamadas que se encaixam no melhor contexto.
+### O Chatbot baseia-se em uma rede neural que é treinada com certas perguntas e suas respectivas respostas (as perguntas que foram utilizadas para o treinamento podem ser vistas na Wiki deste repositório). Ele analisa a pergunta feita pelo pesquisador e responde com base nas respostas pré-progamadas que se encaixam no melhor contexto.
