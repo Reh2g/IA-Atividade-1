@@ -1,6 +1,6 @@
 # CC7711 - INTELIGENCIA ARTIFICIAL E ROBOTICA
 
-## Atividade 1 - Chatbot
+## Chatbot - Atividade 1
 
 Alunos:
 > Gabriel Nunes Missima (22.221.040-3)
